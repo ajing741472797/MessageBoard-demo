@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>留言板</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="message">
+        <h2>留言板</h2>
+        <ol id="messageList">
+        </ol>
+        <form id="postMessage" style="width:700px; margin:50px auto;">
+            <label for="">姓名</label>
+            <input type="text" name="name">
+            <label for="">留言</label>
+            <input type="text" name="content">
+            <input type="submit" value="提交">
+        </form>
+    </section>
+    <script src="./node_modules/leancloud-storage/dist/av-min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
